@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>para ti</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #ffb6b9;
+    }
+
+    p {
+      font-size: 1.6em;
+      max-width: 700px;
+      padding: 0 30px;
+      line-height: 1.8;
+      text-shadow: 1px 1px 2px #d291bc;
+    }
+
+    .glow {
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff9a9e, 0 0 30px #ff6f91;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff9a9e, 0 0 40px #ff6f91;
+      }
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 25px;
+      background: #ffffff;
+      color: #ff6f91;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ff6f91;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="glow">para ti mi amor</h1>
+
+  <p>
+    hay algo en ti que no puedo explicar fácilmente,<br>
+    pero que definitivamente no quiero perder<br><br>
+
+    me encanta cómo eres,<br>
+    cómo piensas,<br>
+    cómo haces que todo se sienta más ligero incluso en días difíciles<br><br>
+
+    contigo no solo la paso bien,<br>
+    contigo me siento en paz<br><br>
+
+    y la verdad…<br>
+    me gustas muchísimo, más de lo que esperaba<br><br>
+
+    te amo,<br>
+    y me haría muy feliz dar este paso contigo<br><br>
+
+    <strong>¿quieres ser mi novia? 💙</strong>
+  </p>
+
+  <button class="btn" onclick="respuesta()">responder</button>
+
+  <script>
+    function respuesta() {
+      alert('espero que digas que sí 😌💙')
+    }
+  </script>
+
+</body>
+</html>
